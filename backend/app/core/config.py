@@ -13,6 +13,11 @@ class Settings(BaseSettings):
 
     frontend_url: str = "http://localhost:5173"
 
+    database_url: str = (
+        "postgresql+psycopg://postgres:postgres@localhost:5432/"
+        "ai_insurance_sampler"
+    )
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
