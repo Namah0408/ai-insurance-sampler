@@ -5,6 +5,11 @@ from app.schemas.proposal import (
     ProposalResponse,
     ProposalStatusUpdate,
 )
+from app.schemas.risk import (
+    RiskAssessmentInput,
+    RiskAssessmentResponse,
+    RiskFlagResponse,
+)
 
 __all__ = [
     "CustomerCreate",
@@ -14,4 +19,7 @@ __all__ = [
     "ProposalCreate",
     "ProposalResponse",
     "ProposalStatusUpdate",
+    "RiskAssessmentInput",
+    "RiskAssessmentResponse",
+    "RiskFlagResponse",
 ]
