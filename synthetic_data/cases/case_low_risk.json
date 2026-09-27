@@ -1,0 +1,29 @@
+{
+  "customer_reference": "SYN-CUST-0001",
+  "full_name": "Aarav Sharma",
+  "date_of_birth": "1990-05-15T00:00:00Z",
+  "proposal_number": "SYN-PROP-0001",
+  "product_name": "Demo Life Protection Plan",
+  "sum_assured": 1000000,
+  "annual_premium": 50000,
+  "assessment": {
+    "age": 36,
+    "documents_present": [
+      "PAN",
+      "AADHAAR",
+      "APPLICATION_FORM",
+      "BANK_STATEMENT"
+    ],
+    "required_documents_missing": [],
+    "kyc_verified": true,
+    "pan_aadhaar_match": true,
+    "bawc_completed": true,
+    "bawc_identity_match": true,
+    "bank_account_age_months": 48,
+    "declared_annual_income": 800000,
+    "annual_premium": 50000,
+    "existing_policy_count": 1,
+    "existing_sum_assured": 500000,
+    "application_data_consistent": true
+  }
+}

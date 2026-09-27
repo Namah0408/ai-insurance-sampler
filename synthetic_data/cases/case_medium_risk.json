@@ -1,0 +1,29 @@
+{
+  "customer_reference": "SYN-CUST-0002",
+  "full_name": "Rohan Verma",
+  "date_of_birth": "1987-08-20T00:00:00Z",
+  "proposal_number": "SYN-PROP-0002",
+  "product_name": "Demo Life Protection Plan",
+  "sum_assured": 1500000,
+  "annual_premium": 150000,
+  "assessment": {
+    "age": 39,
+    "documents_present": [
+      "PAN",
+      "AADHAAR",
+      "APPLICATION_FORM",
+      "BANK_STATEMENT"
+    ],
+    "required_documents_missing": [],
+    "kyc_verified": true,
+    "pan_aadhaar_match": true,
+    "bawc_completed": true,
+    "bawc_identity_match": true,
+    "bank_account_age_months": 4,
+    "declared_annual_income": 700000,
+    "annual_premium": 150000,
+    "existing_policy_count": 3,
+    "existing_sum_assured": 1500000,
+    "application_data_consistent": true
+  }
+}

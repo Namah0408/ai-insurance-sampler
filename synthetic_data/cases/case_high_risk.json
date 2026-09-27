@@ -1,0 +1,30 @@
+{
+  "customer_reference": "SYN-CUST-0003",
+  "full_name": "Vikram Mehta",
+  "date_of_birth": "1982-11-10T00:00:00Z",
+  "proposal_number": "SYN-PROP-0003",
+  "product_name": "Demo Life Protection Plan",
+  "sum_assured": 5000000,
+  "annual_premium": 400000,
+  "assessment": {
+    "age": 44,
+    "documents_present": [
+      "PAN",
+      "APPLICATION_FORM"
+    ],
+    "required_documents_missing": [
+      "AADHAAR",
+      "BANK_STATEMENT"
+    ],
+    "kyc_verified": false,
+    "pan_aadhaar_match": false,
+    "bawc_completed": true,
+    "bawc_identity_match": false,
+    "bank_account_age_months": 2,
+    "declared_annual_income": 800000,
+    "annual_premium": 400000,
+    "existing_policy_count": 6,
+    "existing_sum_assured": 8000000,
+    "application_data_consistent": false
+  }
+}
