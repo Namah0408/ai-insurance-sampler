@@ -10,6 +10,9 @@ from app.api.routes.health import router as health_router
 from app.api.routes.proposals import router as proposals_router
 from app.api.routes.risk import router as risk_router
 from app.core.config import settings
+from app.api.routes.integrations import (
+    router as integrations_router,
+)
 
 
 app = FastAPI(
@@ -61,6 +64,10 @@ app.include_router(
     prefix="/api",
 )
 
+app.include_router(
+    integrations_router,
+    prefix="/api",
+)
 
 @app.get("/")
 async def root():

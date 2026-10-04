@@ -6,6 +6,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     app_name: str = "AI Insurance Sampler"
     app_version: str = "0.1.0"
+
     environment: str = "development"
 
     backend_host: str = "127.0.0.1"
@@ -22,11 +23,23 @@ class Settings(BaseSettings):
         r"C:\Program Files\Tesseract-OCR\tesseract.exe"
     )
 
-    document_storage_path: str = (
-        "storage/documents"
-    )
-
+    document_storage_path: str = "storage/documents"
     max_document_size_mb: int = 10
+
+    # ---------------------------------------------------------
+    # External integrations
+    # ---------------------------------------------------------
+
+    integration_mock_mode: bool = True
+
+    omnidocs_base_url: str = ""
+    omnidocs_api_key: str = ""
+
+    karza_base_url: str = ""
+    karza_api_key: str = ""
+
+    iib_base_url: str = ""
+    iib_api_key: str = ""
 
     model_config = SettingsConfigDict(
         env_file=".env",

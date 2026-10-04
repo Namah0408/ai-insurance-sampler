@@ -14,6 +14,10 @@ from app.schemas.risk import (
     RiskAssessmentResponse,
     RiskFlagResponse,
 )
+from app.schemas.integration import (
+    IntegrationResultResponse,
+    IntegrationRunResponse,
+)
 
 __all__ = [
     "CustomerCreate",

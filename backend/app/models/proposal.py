@@ -76,3 +76,9 @@ class Proposal(Base):
         back_populates="proposal",
         cascade="all, delete-orphan",
     )
+
+    integration_results = relationship(
+        "IntegrationResult",
+        back_populates="proposal",
+        cascade="all, delete-orphan",
+    )
