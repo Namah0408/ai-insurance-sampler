@@ -7,3 +7,7 @@ pytest
 sqlalchemy
 psycopg[binary]
 alembic
+pymupdf
+pytesseract
+pillow
+python-multipart

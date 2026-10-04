@@ -18,6 +18,16 @@ class Settings(BaseSettings):
         "ai_insurance_sampler"
     )
 
+    tesseract_path: str = (
+        r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    )
+
+    document_storage_path: str = (
+        "storage/documents"
+    )
+
+    max_document_size_mb: int = 10
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",

@@ -1,5 +1,9 @@
 from app.schemas.customer import CustomerCreate, CustomerResponse
 from app.schemas.document import DocumentCreate, DocumentResponse
+from app.schemas.document_intelligence import (
+    DocumentIntelligenceResponse,
+    ExtractedFieldResponse,
+)
 from app.schemas.proposal import (
     ProposalCreate,
     ProposalResponse,
@@ -16,6 +20,8 @@ __all__ = [
     "CustomerResponse",
     "DocumentCreate",
     "DocumentResponse",
+    "DocumentIntelligenceResponse",
+    "ExtractedFieldResponse",
     "ProposalCreate",
     "ProposalResponse",
     "ProposalStatusUpdate",

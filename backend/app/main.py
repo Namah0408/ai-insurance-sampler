@@ -3,6 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes.customers import router as customers_router
 from app.api.routes.documents import router as documents_router
+from app.api.routes.document_intelligence import (
+    router as document_intelligence_router,
+)
 from app.api.routes.health import router as health_router
 from app.api.routes.proposals import router as proposals_router
 from app.api.routes.risk import router as risk_router
@@ -45,6 +48,11 @@ app.include_router(
 
 app.include_router(
     documents_router,
+    prefix="/api",
+)
+
+app.include_router(
+    document_intelligence_router,
     prefix="/api",
 )
 
