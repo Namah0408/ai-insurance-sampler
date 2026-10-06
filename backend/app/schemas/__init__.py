@@ -18,6 +18,14 @@ from app.schemas.integration import (
     IntegrationResultResponse,
     IntegrationRunResponse,
 )
+from app.schemas.analysis import (
+    AnalysisHistoryResponse,
+    AnalysisRunResponse,
+    BAWCAnalysisResponse,
+    FinancialAnalysisResponse,
+    InsuranceAnalysisResponse,
+    KYCAnalysisResponse,
+)
 
 __all__ = [
     "CustomerCreate",

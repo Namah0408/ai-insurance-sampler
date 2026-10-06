@@ -13,6 +13,9 @@ from app.core.config import settings
 from app.api.routes.integrations import (
     router as integrations_router,
 )
+from app.api.routes.analysis import (
+    router as analysis_router,
+)
 
 
 app = FastAPI(
@@ -66,6 +69,11 @@ app.include_router(
 
 app.include_router(
     integrations_router,
+    prefix="/api",
+)
+
+app.include_router(
+    analysis_router,
     prefix="/api",
 )
 

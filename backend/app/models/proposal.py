@@ -82,3 +82,27 @@ class Proposal(Base):
         back_populates="proposal",
         cascade="all, delete-orphan",
     )
+
+    kyc_analyses = relationship(
+        "KYCAnalysis",
+        back_populates="proposal",
+        cascade="all, delete-orphan",
+    )
+
+    financial_analyses = relationship(
+        "FinancialAnalysis",
+        back_populates="proposal",
+        cascade="all, delete-orphan",
+    )
+
+    bawc_analyses = relationship(
+        "BAWCAnalysis",
+        back_populates="proposal",
+        cascade="all, delete-orphan",
+    )
+
+    insurance_analyses = relationship(
+        "InsuranceAnalysis",
+        back_populates="proposal",
+        cascade="all, delete-orphan",
+    )
