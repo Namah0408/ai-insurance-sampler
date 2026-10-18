@@ -5,6 +5,7 @@ from app.models.document_field import DocumentField
 from app.models.financial_analysis import FinancialAnalysis
 from app.models.insurance_analysis import InsuranceAnalysis
 from app.models.integration_result import IntegrationResult
+from app.models.knowledge_document import KnowledgeDocument
 from app.models.kyc_analysis import KYCAnalysis
 from app.models.proposal import Proposal
 from app.models.risk_assessment import RiskAssessment
@@ -17,6 +18,7 @@ __all__ = [
     "Document",
     "DocumentField",
     "IntegrationResult",
+    "KnowledgeDocument",
     "KYCAnalysis",
     "FinancialAnalysis",
     "BAWCAnalysis",

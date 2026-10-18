@@ -36,3 +36,4 @@ Thumbs.db
 *.temp
 
 backend/storage/documents/*
+backend/storage/chroma/*

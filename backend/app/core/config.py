@@ -41,6 +41,13 @@ class Settings(BaseSettings):
     iib_base_url: str = ""
     iib_api_key: str = ""
 
+    rag_collection_name: str = "insurance_sampler_knowledge"
+    rag_vector_store_path: str = "storage/chroma"
+    rag_embedding_model: str = "all-MiniLM-L6-v2"
+    rag_chunk_size: int = 800
+    rag_chunk_overlap: int = 120
+    rag_top_k: int = 5
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",

@@ -26,6 +26,13 @@ from app.schemas.analysis import (
     InsuranceAnalysisResponse,
     KYCAnalysisResponse,
 )
+from app.schemas.rag import (
+    KnowledgeDocumentResponse,
+    KnowledgeIngestResponse,
+    KnowledgeSearchRequest,
+    KnowledgeSearchResponse,
+    KnowledgeSearchResult,
+)
 
 __all__ = [
     "CustomerCreate",
